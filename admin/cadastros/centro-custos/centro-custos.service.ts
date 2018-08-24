@@ -16,7 +16,7 @@ export class CentroCustosService {
     public environment = environment;
 
     getAllcentrocustoss(): Observable<GenericModels> {        
-        return this.http.get(this.environment.urlFood + 'centro_custos')
+        return this.http.get(this.environment.urlFood + '/centro_custos')
         .map(this.extractData)
         .catch(this.handleError);
     }
@@ -26,7 +26,7 @@ export class CentroCustosService {
         debugger
         let cpHeaders = new Headers({ 'Content-Type': 'application/json' });
         let options = new RequestOptions({ headers: cpHeaders });
-        return this.http.delete(this.environment.urlFood + 'centro_custos&id=' + ID, options)
+        return this.http.delete(this.environment.urlFood + '/centro_custos&id=' + ID, options)
         .map(success => success.status)
         .catch(this.handleError);
     }	  
@@ -36,7 +36,7 @@ export class CentroCustosService {
         var body = JSON.stringify(ID);
         var headerOptions = new Headers({'Content-Type':'application/json'});
         var requestOptions = new RequestOptions({method : RequestMethod.Post,headers : headerOptions});
-        return this.http.post(this.environment.urlFood + 'centro_custos&id=' + ID, body, requestOptions)
+        return this.http.post(this.environment.urlFood + '/centro_custos&id=' + ID, body, requestOptions)
         .map(x => x.json());
      }
 

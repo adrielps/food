@@ -13,7 +13,7 @@ export class NovoCentroCustosService {
   public environment = environment;
 
   getEmpresas(): Observable<GenericModels> {        
-    return this.http.get(this.environment.urlFood + 'empresas')
+    return this.http.get(this.environment.urlFood + '/empresas')
     .map(this.extractData)
     .catch(this.handleError);
   }

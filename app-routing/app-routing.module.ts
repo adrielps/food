@@ -30,7 +30,7 @@ export const routing: ModuleWithProviders = RouterModule.forRoot(APP_ROUTES);*/
       { path: 'tipos-documentos', component: TiposDocumentosComponent, canActivate: [AuthGuard] },
       { path: 'centro-custos', component: CentroCustosComponent/*, canActivate: [AuthGuard]*/ },      
       { path: 'centro-custos/:id', component: CentroCustosComponent, canActivate: [AuthGuard]},
-      { path: 'clientes', component: ClientesComponent, canActivate: [AuthGuard] },
+      { path: 'clientes', component: ClientesComponent/*, canActivate: [AuthGuard]*/ },
       { path: 'novo-cliente', component: NovoClienteComponent, canActivate: [AuthGuard] },      
       { path: 'produtos', component: ProdutosComponent, canActivate: [AuthGuard] },      
       { path: 'novo-produto', component: NovoProdutoComponent, canActivate: [AuthGuard] },      

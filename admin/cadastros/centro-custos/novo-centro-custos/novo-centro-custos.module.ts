@@ -23,7 +23,7 @@ import { NovoCentroCustosComponent } from './novo-centro-custos.component';
     HttpModule,
     FormsModule,
     FormGroup,
-    ReactiveFormsModule   
+    ReactiveFormsModule //formulários reativos  
   ],
   declarations: [
     AdminHeaderComponent,

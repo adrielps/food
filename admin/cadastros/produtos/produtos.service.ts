@@ -14,7 +14,7 @@ export class ProdutosService {
   public environment = environment;
 
   getAllProdutos(): Observable<GenericModels> {        
-      return this.http.get(this.environment.urlFood + 'produtos')
+      return this.http.get(this.environment.urlFood + '/produtos')
       .map(this.extractData)
       .catch(this.handleError);
   }

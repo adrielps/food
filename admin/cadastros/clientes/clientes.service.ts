@@ -14,7 +14,7 @@ export class ClientesService {
     public environment = environment;
 
     getAllClientes(): Observable<GenericModels> {        
-        return this.http.get(this.environment.urlFood + 'clientes')
+        return this.http.get(this.environment.urlFood + '/clientes')
         .map(this.extractData)
         .catch(this.handleError);
     }

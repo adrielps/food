@@ -33,8 +33,7 @@ import { AuthGuard } from './guards/auth-guard';
     AdminModule,
     HttpClientModule,
     HttpModule,
-    CommonModule,
-    //routing    
+    CommonModule
   ],
   providers: [    
     CentroCustosService,

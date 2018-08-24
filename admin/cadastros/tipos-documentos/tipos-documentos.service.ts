@@ -21,7 +21,7 @@ export class TiposDocumentosService {
   public environment = environment;
 
   getAllTipos(): Observable<GenericModels> {        
-      return this.http.get(this.environment.urlFood + 'tipos_documentos')
+      return this.http.get(this.environment.urlFood + '/tipos_documentos')
       .map(this.extractData)
       .catch(this.handleError);
     }    
